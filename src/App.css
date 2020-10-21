@@ -14,14 +14,135 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #283344;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: rgb(253, 158, 158);
+}
+
+.App-text {
+  display: flex;
+  position: absolute; left:100px;
+  text-align: center;
+  font-size: calc(32px + 2vmin);
+  align-items: left;
+  justify-content: left;
+  color: rgb(252, 204, 132);
+}
+
+.button {
+  position:absolute; left:450px;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+    background-size: 40px 40px;
+        border-radius: 4px;
+        background-color: #4a6d76;
+    display: block;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    height: 35px;
+    text-align: center;
+    transition: width 0.6s ease 0s;
+    width: 160px;
+        font:bold 20px arial;
+        line-height: 35px;
+        margin:20px auto;
+        text-decoration:none;
+        cursor:pointer;
+        animation: 2s linear 0s normal none infinite progress-bar-stripes;
+}
+
+.buttonphoto {
+  position:absolute; left:150px;
+    margin:20px auto;
+color: #FFFFFF;
+display: block;
+font:bold 16px arial;
+height: 35px;
+line-height: 35px;
+text-align: center;
+text-decoration: none;
+width: 160px;
+    background: linear-gradient(to bottom, #209DCA, #0F84AF) repeat scroll 0 0 / 100% 200% rgba(0, 0, 0, 0);
+transition: all 0.5s linear 0s;
+    border-bottom: 4px solid #ccc;
+    cursor:pointer;
+}
+.buttonphoto:hover,.buttonphoto:focus{
+background-position: 0 -102%;
+}
+
+.buttonvideo{
+  position:absolute; left:330px;
+  background:#eee;
+  color:#088;
+  text-decoration:none;
+  display:block;
+  width:90px;
+  text-align:center;
+  margin:20px auto;
+  padding:10px 10px;
+  transition:all 0.3s;
+  cursor:pointer;
+  }
+ .buttonvideo:hover{
+  box-shadow:0px -5px 0 #088 inset;
+}
+ 
+
+.buttonhome {
+  position:absolute; left: 40px;
+  display: block;
+  width:80px;
+  margin: 20px auto;
+  
+  padding: 7px 20px;
+  font-family: inherit;
+  font-size: 15px;
+  color: #111;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 1);
+  background-color: #ccc;
+  background-clip: padding-box;
+  border: 1px solid;
+  border-color: #202020 #1a1a1a #111;
+  border-radius: 2px;
+  background-image: -webkit-linear-gradient(top, #efefef, #777);
+  background-image: -moz-linear-gradient(top, #efefef, #777);
+  background-image: -o-linear-gradient(top, #efefef, #777);
+  background-image: linear-gradient(to bottom, #efefef, #777);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.09), 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.09), 0px 1px 1px rgba(0, 0, 0, 0.2);
+  cursor:pointer;
+}
+.buttonhome:hover {
+  background-color: #aaaaaa;
+  background-image: -webkit-linear-gradient(top, #ccc, #555);
+  background-image: -moz-linear-gradient(top, #ccc, #555);
+  background-image: -o-linear-gradient(top, #ccc, #555);
+  background-image: linear-gradient(to bottom, #ccc, #555);
+}
+.buttonhome:active, .bot5.active {
+  background-color: #b42f32;
+  border-color: #1c1c1c #202020 #222;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.09);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.09);
+}
+
+.Icons {
+  background-color: #283344;
+  min-height: 100vh;
+  position: left;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(253, 158, 158);
 }
 
 .App-link {
